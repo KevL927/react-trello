@@ -1,41 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-
-
-// var Card = function(props) {
-    
-//     return (
-//         <div className='card'>
-//         {props.title}
-//         </div>
-//     );    
-// };
-
-// var List = function(props) {
-//     var lists=[];
-//     for(var i = 0; i < 3; i++) {
-//         props.lists.push(<Card key={i}/>);
-//     }
-//     return(
-//         <div className="card-list">
-//             {props.title}
-//         </div>
-//         )
-// };
-
-// var Board = function(props) {
-//     var lists = [];
-//     for(var i = 0; i < 3; i++) {
-//         lists.push(<Card key={i}/>);
-//     }
-//     return(
-//         <div className="card-board">
-//             <CardList props.lists/>
-//         </div>
-//     );
-// };
-
 var Card = function (props) {
     
     return (
@@ -67,8 +32,6 @@ var Board = function (props) {
     for(var i=0; i< props.lists.length; i++){
          lists.push(<List title={props.lists[i].title} cards={props.lists[i].cards} key={i} />)
     }
-//   <List lists={props.lists} />
-    
     return (
         <div className="card-board">
             <h1>{props.title}</h1>
